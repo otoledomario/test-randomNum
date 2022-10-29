@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+
+    <div class="screen1 ">
+      <h1>Sorteio de número</h1>
+      <p>Insira o intervalo desejado para sortear:</p>
+
+      <form action="">
+        <div class="input-box">
+          <label for="initNum">Número inicial</label>
+          <input id="initNum" type="number" value="1" min="1" required>
+        </div>
+
+        <div class="input-box">
+          <label for="endNum">Número final</label>
+          <input id="endNum" type="number" min="2" required>
+        </div>
+
+        <button id="submitForm" type="submit">Sortear</button>
+
+      </form>
+    </div>
+
+    <div class="screen2 hide">
+      <h2>Número sorteado: <span>123</span></h2>
+
+      <button id="again">Novo sorteio</button>
+    </div>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
